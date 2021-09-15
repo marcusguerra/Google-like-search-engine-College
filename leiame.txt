@@ -1,0 +1,10 @@
+- Para executar o programa é necessário ter a biblioteca GTK instalada no sistema Linux.
+- Após instalada, um terminal deverá ser aberto na pasta onde se encontram os arquivos e o comando "make" deverá ser executado para compilar o código e gerar um arquivo .bin executavel.
+- Feito isso, o comando "./main-bin" deverá ser executado fazendo com que a janela do programa abra fazendo a interação com o usuário.
+- Com a janela aberta, os arquivos relativos ao dicionario e de entrada de texto devem ser escolhidos e então inseridos.
+- Para realizar uma pesquisa, os termos devem ser digitados e o numero de termos escolhidos para que haja a ação.
+- Apos o botão de pesquisa ser pressionado, aparecerão sugestões de palavras semelhantes aquelas inseridas.
+- Quando todas as sugestoes tiverem sido feitas, o resultado da busca aparecerá, mostrando em ordem de relevancia os arquivos que contem os termos digitados.
+- Cada linha de cada texto de entrada deve ter no máximo 200 caracteres e cada palavra dessa linha 50.
+- Para os dicionarios, cada linha deve ter somente uma única palavra.
+- Os arquivos de dicionários e de entradas de texto estão inclusas no ZIP enviado.

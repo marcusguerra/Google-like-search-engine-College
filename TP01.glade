@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.2 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkAdjustment" id="adjustment1">
+    <property name="upper">100</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkWindow" id="janela">
+    <property name="height_request">450</property>
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">TP-01</property>
+    <property name="icon_name">setroubleshoot_icon</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="grade">
+        <property name="width_request">530</property>
+        <property name="height_request">350</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="bt_imprime_indice">
+            <property name="label" translatable="yes">Construir e Imprimir
+     Índice Invertido</property>
+            <property name="width_request">210</property>
+            <property name="height_request">50</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_bt_imprime_indice_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">25</property>
+            <property name="y">235</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="bt_imprime_palavras">
+            <property name="label" translatable="yes">Imprimir Palavras da TST</property>
+            <property name="width_request">210</property>
+            <property name="height_request">50</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_bt_imprime_palavras_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">25</property>
+            <property name="y">175</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="bt_busca_palavra">
+            <property name="label" translatable="yes">Buscar</property>
+            <property name="width_request">120</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_bt_busca_palavra_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">275</property>
+            <property name="y">145</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="entrada_palavra">
+            <property name="width_request">240</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="placeholder_text" translatable="yes">Digite aqui</property>
+            <signal name="changed" handler="on_entrada_palavra_changed" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">275</property>
+            <property name="y">65</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="texto2">
+            <property name="width_request">100</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Trabalho Prático - CCF212</property>
+          </object>
+          <packing>
+            <property name="x">180</property>
+            <property name="y">10</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="texto3">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Inserção de Arquivos</property>
+          </object>
+          <packing>
+            <property name="x">25</property>
+            <property name="y">45</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="bt_limpa_palavra">
+            <property name="label" translatable="yes">Limpar</property>
+            <property name="width_request">120</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_bt_limpa_palavra_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">395</property>
+            <property name="y">145</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="texto4">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Busca de Palavras</property>
+          </object>
+          <packing>
+            <property name="x">275</property>
+            <property name="y">45</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="bt_insere_arquivo">
+            <property name="label" translatable="yes">Inserir</property>
+            <property name="width_request">210</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_bt_insere_arquivo_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">25</property>
+            <property name="y">110</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="texto5">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Ações</property>
+          </object>
+          <packing>
+            <property name="x">25</property>
+            <property name="y">155</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="texto6">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Quantidade de
+Termos</property>
+            <property name="justify">center</property>
+          </object>
+          <packing>
+            <property name="x">400</property>
+            <property name="y">105</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="spin_qt_termos">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="adjustment">adjustment1</property>
+          </object>
+          <packing>
+            <property name="x">275</property>
+            <property name="y">105</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="texto1">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Inserção de Palavras do DIcionario</property>
+          </object>
+          <packing>
+            <property name="x">25</property>
+            <property name="y">290</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFileChooserButton" id="insere_arq_texto">
+            <property name="width_request">210</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="title" translatable="yes"/>
+            <signal name="file-set" handler="on_insere_arq_texto_file_set" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">25</property>
+            <property name="y">65</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFileChooserButton" id="insere_arq_dic">
+            <property name="width_request">210</property>
+            <property name="height_request">50</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="title" translatable="yes"/>
+            <signal name="file-set" handler="on_insere_arq_dic_file_set" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">25</property>
+            <property name="y">310</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="bt_insere_tst">
+            <property name="label" translatable="yes">Inserir na TST</property>
+            <property name="width_request">210</property>
+            <property name="height_request">50</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_bt_insere_tst_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">25</property>
+            <property name="y">370</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="bt_sugestao_4">
+            <property name="label" translatable="yes">4</property>
+            <property name="width_request">240</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_bt_sugestao_4_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">275</property>
+            <property name="y">330</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="bt_sugestao_5">
+            <property name="label" translatable="yes">5</property>
+            <property name="width_request">240</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_bt_sugestao_5_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">275</property>
+            <property name="y">370</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="bt_sugestao_1">
+            <property name="label" translatable="yes">1</property>
+            <property name="width_request">240</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_bt_sugestao_1_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">275</property>
+            <property name="y">210</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="bt_sugestao_2">
+            <property name="label" translatable="yes">2</property>
+            <property name="width_request">240</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_bt_sugestao_2_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">275</property>
+            <property name="y">250</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="bt_sugestao_3">
+            <property name="label" translatable="yes">3</property>
+            <property name="width_request">240</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_bt_sugestao_3_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">275</property>
+            <property name="y">290</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="texto7">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Sugestões de Palavras</property>
+          </object>
+          <packing>
+            <property name="x">275</property>
+            <property name="y">190</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
